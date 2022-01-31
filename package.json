@@ -14,8 +14,6 @@
   },
   "scripts": {
     "sonar": "sonar-scanner",
-    "coverage": "./node_modules/.bin/nyc -r cobetura -r text-summary -r html npm test",
-    "coverage-lcov": "./node_modules/.bin/nyc -r cobetura -r text-summary -r lcov npm test",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "jest --collectCoverage",

@@ -2,6 +2,7 @@
   "name": "simple-reactjs-app",
   "version": "0.1.0",
   "private": true,
+  "main": "src/index.ts",
   "homepage": "https://aditya-sridhar.github.io/simple-reactjs-app",
   "dependencies": {
     "axios": "^0.18.0",
@@ -16,7 +17,7 @@
     "sonar": "sonar-scanner",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --watchAll=false --coverage --testResultsProcessor jest-sonar-reporter",
+    "test": "jest --coverage",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
@@ -28,6 +29,9 @@
     "nock": "13.0.4",
     "jest": "^21.1.0",
     "jest-sonar-reporter": "^1.3.0",
+     "sonarqube-scanner": "^2.0.2",
+    "js-jest": "^21.1.3",
+    "javascript": "^2.5.3"
     "nyc": "15.1.0"
   },
   "jestSonar": {

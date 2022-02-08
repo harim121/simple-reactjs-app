@@ -1,77 +1,39 @@
-# Simple React JS Project
+# How to Test React Components Using Jest
 
-## What is the use of this Repo
+A repository written for a [blog post about testing React with Jest](https://www.sitepoint.com/test-react-components-jest).
 
-This Project is a Simple ReactJS Project which demonstrates the following
-1. Creating a Component in React
-2. Making HTTP calls
-3. Communicating between parent and child component
-4. Using Bootstrap along with React
-5. Using Basic Routing in React
+## Requirements
 
-The project Template can be used to build bigger projects
+* [Node.js](http://nodejs.org/)
 
-## Live Application URL
+## Running locally
 
-### https://aditya-sridhar.github.io/simple-reactjs-app
-This URL has the application deployed in
+- `git clone` this repo
+- `cd testing-react-with-jest`
+- `npm install`
+- In one tab, run `npm run watch`. This will fire up Webpack and rebuild your app on each change.
+- In another tab, run `npm start`. This will fire up a local server that will refresh automatically when the code changes.
+- `open http://localhost:8081` to view to the app.
 
-## Prerequisites
+## Tests
 
-### Install Node JS
-Refer to https://nodejs.org/en/ to install nodejs
+Run `npm test` to run the tests with Jest.
 
-### Install create-react-app
-Install create-react-app npm package globally. This will help to easily run the project and also build the source files easily. Use the following command to install create-react-app
+Run `npm test -- --watch` to run Jest and have it automatically rerun everytime you change a file.
 
-```bash
-npm install -g create-react-app
-```
-## Live Application URL
+## Problems / Questions
 
-The Application is deployed in https://aditya-sridhar.github.io/simple-reactjs-app
+Please feel free to raise an issue if you have any Qs :)
 
-Click on the link to see the application
 
-## Cloning and Running the Application in local
+## License
 
-Clone the project into local
+The MIT License (MIT)
 
-Install all the npm packages. Go into the project folder and type the following command to install all npm packages
+Copyright (c) 2020 SitePoint
 
-```bash
-npm install
-```
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-In order to run the application Type the following command
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-```bash
-npm start
-```
-
-The Application Runs on **localhost:3000**
-
-## Application design
-
-#### Components
-
-1. **Customers** Component : This Component displays a list of customers. This Component gets the data from a json file in assets folder
-
-2. **CustomerDetails** Component : This Component Displays the details of the selected customer. This Component gets its data from a json file in assets folder as well. This Component is the Child Component of *Customers* Component
-
-#### HTTP client
-
-**axios** library is used to make HTTP Calls
-
-#### URL
-
-The application has just one url /customerlist which ties to *Customers* Component
-
-## Resources
-
-**create-react-app** : The following link has all the commands that can be used with create-react-app
-https://github.com/facebook/create-react-app
-
-**ReactJS** : Refer to https://reactjs.org/ to understand the concepts of ReactJS
-
-**React Bootstrap** : Refer to https://react-bootstrap.github.io/getting-started/introduction/ to understand how to use React Bootstrap
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
